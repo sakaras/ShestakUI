@@ -7,7 +7,7 @@
 C["position"] = {
 	-- Miscellaneous positions
 	["minimap"] = {"BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -21, 24},				-- Minimap
-	["map"] = {"BOTTOM", UIParent, "BOTTOM", -120, 320},							-- Map
+	["map"] = {"TOP", UIParent, "TOP", -180, -50},							-- Map
 	["chat"] = {"BOTTOMLEFT", UIParent, "BOTTOMLEFT", 24, 23},						-- Chat
 	["bag"] = {"BOTTOMRIGHT", Minimap, "TOPRIGHT", 2, 5},							-- Bag
 	["bank"] = {"LEFT", UIParent, "LEFT", 23, 150},									-- Bank

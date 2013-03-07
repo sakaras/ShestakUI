@@ -9,30 +9,26 @@ if C.reminder.raid_buffs_enable == true then
 	-- General buffs
 	T.ReminderBuffs = {
 		Flask = {
-			105689,	-- Flask of Spring Blossoms
 			105694,	-- Flask of the Earth
 			105691,	-- Flask of the Warm Sun
 			105696,	-- Flask of Winter's Bite
 			105693,	-- Flask of Falling Leaves
+			105689,	-- Flask of Spring Blossoms
 		},
 		BattleElixir = {
+			105688,	-- Monk's Elixir
+			105685,	-- Elixir of Peace
 			105682,	-- Mad Hozen Elixir
 			105683,	-- Elixir of Weaponry
 			105684,	-- Elixir of the Rapids
-			105685,	-- Elixir of Peace
 			105686,	-- Elixir of Perfection
-			105688,	-- Monk's Elixir
 		},
 		GuardianElixir = {
 			105681,	-- Mantid Elixir
 			105687,	-- Elixir of Mirrors
 		},
 		Food = {
-			104280,	-- Steamed Crab Surprise
-			104277,	-- Mogu Fish Stew
-			104272,	-- Black Pepper Ribs and Shrimp
-			104283,	-- Chun Tian Spring Rolls
-			104275,	-- Sea Mist Rice Noodles
+			104280,	-- Well Fed
 		},
 		Stat = {
 			20217,	-- Blessing of Kings
@@ -41,10 +37,10 @@ if C.reminder.raid_buffs_enable == true then
 			1126,	-- Mark of the Wild
 		},
 		Stamina = {
-			111922,	-- Runescroll of Fortitude III
-			469,	-- Commanding Shout
 			6307,	-- Blood Pact
+			469,	-- Commanding Shout
 			90364,	-- Qiraji Fortitude
+			111922,	-- Runescroll of Fortitude III
 			21562,	-- Power Word: Fortitude
 		}
 	}
@@ -61,6 +57,7 @@ if C.reminder.raid_buffs_enable == true then
 		Spell6Buff = {	-- Spell Haste
 			24907,	-- Moonkin Aura
 			49868,	-- Mind Quickening
+			135678,	-- Energizing Spores
 			51470,	-- Elemental Oath
 		}
 	end
@@ -150,7 +147,6 @@ if C.reminder.solo_buffs_enable == true then
 				["spells"] = {
 					13165,	-- Aspect of the Hawk
 					109260,	-- Aspect of the Iron Hawk
-					82661,	-- Aspect of the Fox
 				},
 				["instance"] = true,
 				["personal"] = true,

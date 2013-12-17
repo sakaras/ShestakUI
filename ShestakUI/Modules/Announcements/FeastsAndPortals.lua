@@ -22,10 +22,7 @@ frame:SetScript("OnEvent", function(self, event, _, subEvent, _, _, srcName, _, 
 			SendChatMessage(string.format(L_ANNOUNCE_FP_STAT, srcName, GetSpellLink(spellID), SPELL_STAT4_NAME), T.CheckChat(true))
 		elseif C.announcements.feasts and (spellID == 126499 or spellID == 126500) then
 			SendChatMessage(string.format(L_ANNOUNCE_FP_STAT, srcName, GetSpellLink(spellID), SPELL_STAT5_NAME), T.CheckChat(true))
-		elseif C.announcements.feasts and (spellID == 104958 or spellID == 105193 or spellID == 126503 or spellID == 126504 or spellID == 145166 or spellID == 145169 or spellID == 145196) then
-			SendChatMessage(string.format(L_ANNOUNCE_FP_PRE, srcName, GetSpellLink(spellID)), T.CheckChat(true))
-		-- Refreshment Table
-		elseif C.announcements.feasts and spellID == 43987 then
+		elseif C.announcements.feasts and (spellID == 104958 or spellID == 105193 or spellID == 126503 or spellID == 126504) then
 			SendChatMessage(string.format(L_ANNOUNCE_FP_PRE, srcName, GetSpellLink(spellID)), T.CheckChat(true))
 		end
 	elseif subEvent == "SPELL_SUMMON" then
@@ -52,6 +49,13 @@ frame:SetScript("OnEvent", function(self, event, _, subEvent, _, _, srcName, _, 
 		-- Piccolo of the Flaming Fire
 		if C.announcements.toys and spellID == 18400 then
 			SendChatMessage(string.format(L_ANNOUNCE_FP_USE, srcName, GetSpellLink(spellID)), T.CheckChat(true))
+		end
+		-- Refreshment Table
+		if C.announcements.feasts and spellID == 43987 then
+			SendChatMessage(string.format(L_ANNOUNCE_FP_PRE, srcName, GetSpellLink(spellID)), T.CheckChat(true))
+		-- Noodle Cart
+		elseif C.announcements.feasts and (spellID == 145166 or spellID == 145169 or spellID == 145196) then
+			SendChatMessage(string.format(L_ANNOUNCE_FP_PRE, srcName, GetSpellLink(spellID)), T.CheckChat(true))
 		end
 	elseif subEvent == "SPELL_AURA_APPLIED" then
 		-- Turkey Feathers and Party G.R.E.N.A.D.E.

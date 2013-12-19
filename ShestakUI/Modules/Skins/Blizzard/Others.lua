@@ -153,6 +153,7 @@ SkinBlizzUI:SetScript("OnEvent", function(self, event, addon)
 			"GameMenuButtonOptionHouse",
 			"GameMenuButtonAddonManager",
 			"GameMenuButtonSettingsUI",
+			"GameMenuButtonStore",
 			"ReadyCheckFrameYesButton",
 			"ReadyCheckFrameNoButton",
 			"ColorPickerOkayButton",

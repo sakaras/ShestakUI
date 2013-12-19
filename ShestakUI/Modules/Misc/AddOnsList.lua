@@ -478,6 +478,19 @@ SLASH_ADDONMANAGER1 = "/aload"
 SLASH_ADDONMANAGER2 = "/фдщфв"
 
 -- Game menu buttons
+-- GameMenuButtonStore:Hide()
+local GameMenuFrameHeight = GameMenuFrame:GetHeight()
+GameMenuFrame:SetScript("OnShow", function(self)
+GameMenuButtonOptions:SetPoint("TOP", "GameMenuButtonStore", "BOTTOM", 0, -10)
+GameMenuButtonLogout:SetPoint("TOP", "GameMenuButtonMacros", "BOTTOM", 0, -10)
+GameMenuButtonContinue:SetPoint("TOP", "GameMenuButtonQuit", "BOTTOM", 0, -10)
+	if IsMacClient() then
+		GameMenuButtonUIOptions:SetPoint("TOP", "GameMenuButtonMacOptions", "BOTTOM", 0, -1)
+	else
+		GameMenuButtonMacOptions:Hide()
+	end
+end)
+
 local gmbAddOns = CreateFrame("Button", "GameMenuButtonAddonManager", GameMenuFrame, "GameMenuButtonTemplate")
 gmbAddOns:SetText(ADDONS)
 gmbAddOns:SetPoint("TOP", "GameMenuButtonOptions", "BOTTOM", 0, -1)
